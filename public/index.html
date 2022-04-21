@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Todos</h1>
+    </div>
+
+    <div class="body">
+        <div class="add-task-field">
+            <div class="check-all-btn">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <input type="text" class="add-task-input" placeholder="What needs to be done?">
+        </div>
+        <div class = "main-section">
+            <ul class="todo-list">
+                <!-- <li class="todo-content">
+                    <input type="checkbox" class="check-task">
+                    <input type="text" value="First thing" readonly>
+                    <div class="delete-task-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="todo-list-control">
+            <span class="task-quantity">2 task left</span>
+            <div class="control-btn">
+                <div class="btn btn-all active">All</div>
+                <div class="btn btn-active">Active</div>
+                <div class="btn btn-complete">Complete</div>
+                <div class="btn btn-delete-all">Delete all</div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
