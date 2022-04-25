@@ -3,6 +3,10 @@
     --gray: #707070;
 }
 
+html{
+    background-color: aliceblue;
+}
+
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,14 +25,21 @@ body {
     align-items: center;
 }
 
+.body {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 .header h1{
     font-size: 100px;
     font-weight: 400;
-    color: var(--dark);
+    color: #000;
     margin-bottom: 40px;
 }
 
 .add-task-field {
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     width: 550px;
@@ -39,11 +50,16 @@ body {
     font-size: 24px;
     padding: 18px;
     color: rgb(150, 147, 147);
-    opacity: 0.1;
+    cursor: pointer;
     visibility: hidden;
+    background-color: #fff;
 }
 
-.add-task-field .check-all-btn:hover {
+.add-task-field .check-all-btn i {
+    opacity: 0.1;
+}
+
+.add-task-field  i:hover {
     opacity: 0.5;
 }
 
@@ -57,6 +73,7 @@ body {
 
 .todo-content {
     display: flex;
+    background-color: #fff;
 }
 
 input[type = 'checkbox']{
@@ -90,6 +107,7 @@ input[type = 'text'] {
     font-size: 24px;
     padding: 18px;
     color: var(--gray);
+    cursor: pointer;
     visibility: hidden;
 }
 
@@ -108,8 +126,8 @@ input[type = 'text'] {
 .todo-list-control{
     border: 1px solid #e6e6e6;
     border-top: none;
-    display: flex;
-    visibility: hidden;
+    display: none;
+    background-color: #fff;
 }
 
 .task-quantity {
@@ -133,9 +151,12 @@ input[type = 'text'] {
 .btn-complete{
     padding: 5px 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn-delete-all {
+    margin-top: 5px;
+    cursor: pointer;
     visibility: hidden;
 }
 
